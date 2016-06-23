@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> SOME APPS</title>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylsheet" href="../css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/gallery.css">
+
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        
+    </head>
+	<body>  
+
+					<nav class="navbar navbar-default" id="subnav">
+              <div class="container-fluid">
+                <!-- <div class="navbar-header">
+                  <a class="navbar-brand" href="#">WebSiteName</a>
+                </div> -->
+                <ul class="nav navbar-nav">
+                  <li><a href="aluminpro.html">Home</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="events.html" >Events</a></li>
+				  <li><a href="registration.html" >Registration</a></li>				  
+				  <li><a href="aboutus.html">Aboutus</a></li>
+                </ul>
+             </div> 
+            </nav>
+            <div class="container" id = "gallery">
+				<div class="jumbotron" id = "jumbo">
+					<p>Gallery</p>
+				
+				</div>
+				
+				<div class="row">
+					<div class="col-sm-offset-4 col-sm-4" id = "imagevideo">
+						<table class="table table-bordered table-striped">
+							<tr>
+								<th class=" center" ><a style = "text-decoration: none" id="gallery-images">Images</a></th>
+								<th class=" center" ><a style = "text-decoration: none" id="gallery-videos">Videos</a></th>
+							</tr>
+						</table>
+					</div>
+				</div>
+				
+				
+				<div id="gallery-images-div"> 
+			
+				<div class="row"> 
+					<div class="col-md-2">
+						<img src="../images/5.jpg" class="img-thumbnail nail">
+						
+					</div>
+
+					<div class="col-md-2">
+						<img src="../images/7.jpg" class="img-thumbnail nail1">
+					</div>
+
+					<div class="col-md-2">
+						<img src="../images/5.jpg" class="img-thumbnail nail2">
+					</div>
+					<div class="col-md-2">
+						<img src="../images/5.jpg" class="img-thumbnail nail2">
+					</div>
+					
+					<div class="col-md-2">
+						<img src="../images/6.jpg" class="img-thumbnail nail3">
+					</div>
+					
+					
+					<div class="col-md-2">
+						<img src="../images/7.jpg" class="img-thumbnail nail1">
+					</div>
+					
+					
+					<div class="col-md-2">
+						<img src="../images/6.jpg" class="img-thumbnail nail5">
+					</div>
+					
+					
+					<div class="col-md-2">
+						<img src="../images/4.jpg" class="img-thumbnail nail5">
+					</div>
+					
+					
+					
+
+				</div>
+
+
+				
+				</div>
+				
+				<div id="gallery-videos-div" style="display:none" > 
+				
+						<div class="row"> 
+					<div class="col-md-2">
+						<img src="../images/5.jpg" class="img-thumbnail nail">
+						
+					</div>
+
+					<div class="col-md-2">
+						<img src="../images/7.jpg" class="img-thumbnail nail1">
+					</div>
+
+					<div class="col-md-2">
+						<img src="../images/5.jpg" class="img-thumbnail nail2">
+					</div>
+					<div class="col-md-2">
+						<img src="../images/5.jpg" class="img-thumbnail nail2">
+					</div>
+					
+					<div class="col-md-2">
+						<img src="../images/6.jpg" class="img-thumbnail nail3">
+					</div>
+					
+					
+					<div class="col-md-2">
+						<img src="../images/7.jpg" class="img-thumbnail nail1">
+					</div>
+					
+					
+					<div class="col-md-2">
+						<img src="../images/6.jpg" class="img-thumbnail nail5">
+					</div>
+					
+					
+					<div class="col-md-2">
+						<img src="../images/4.jpg" class="img-thumbnail nail5">
+					</div>
+					
+					<div class="col-md-2">
+						<img src="../images/6.jpg" class="img-thumbnail nail5">
+					</div>
+					
+					<div class="col-md-2">
+						<img src="../images/5.jpg" class="img-thumbnail nail2">
+					</div>
+					
+					<div class="col-md-2">
+						<img src="../images/5.jpg" class="img-thumbnail nail2">
+					</div>
+					
+					
+					
+					
+
+				</div>
+
+				
+				
+				
+				
+			</div>
+				
+				
+				
+				
+			
+			
+			</div>		
+									
+						<!-- footer starts-->
+		<div class="container" id="footer" >
+			<div class="footer_nav"> 							
+				 <a href="#">  Contactus</a> &nbsp;|&nbsp;
+				<a href="#"> Terms and conditions </a>	&nbsp;|&nbsp;
+<a href="#"> site map </a>	|				
+		</div>
+			<div class="footer_navbar">				
+				please visit  <a href="#">www.alumin.com</a> 
+			</div>
+		</div>		
+						<!--footer ends-->
+
+
+
+
+
+
+
+			
+	</body>
+	
+<script>
+			$(document).ready(function(){
+			$("#gallery-images").click(function(){
+				$("#gallery-images-div").show();
+				$("#gallery-videos-div").hide();
+				 
+			});
+			$("#gallery-videos").click(function(){
+			   $("#gallery-videos-div").show();
+				$("#gallery-images-div").hide();
+			});
+		});
+		
+</script>	
+	</html>

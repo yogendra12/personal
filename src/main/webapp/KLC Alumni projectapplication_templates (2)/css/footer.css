@@ -1,0 +1,15 @@
+#footerdiv{
+	
+	background-color: #4F4E57;
+	color: white;
+}
+.zero-padding{
+	padding : 0 !important;
+}
+#footerContent{
+margin-top: 10px;
+}
+#footerContent a{
+	color: white;
+	
+}

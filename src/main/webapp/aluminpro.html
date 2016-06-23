@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Alumin Apps</title>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylsheet" href="../css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/boot.css">
+		<link rel="stylesheet" href="../css/gallery.css">
+
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+
+        <style>
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width:100%;
+    /*margin: auto;*/
+}
+</style>
+ 
+
+
+
+
+    </head>
+    <body>
+            <nav class="navbar navbar-default" id="header">
+                <div class="container">
+                  <div class="header">
+                      <a class="navbar-brand" href="#"><img src="../images/logo_ema.gif" class="img-responsive" alt="logo logo logo logo" /></a>
+                  </div>
+                  <div class="col-sm-6 pull-right">
+                    <!-- <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#myModal">Login</button>
+
+
+                    <div id="myModal" class="modal fade" role="dialog">
+                      <div class="modal-dialog">
+
+
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Modal Header</h4>
+                          </div>
+                          <div class="modal-body">
+                            <p>Some text in the modal.</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div> -->
+                    <form role-"form">
+                        <input type="text" placeholder="Username" />
+                        <input type="password" placeholder="Password"/>
+                        <input type="submit" value="submit"/>
+                        <p>
+                            <input type="checkbox"> Remember Me
+                        </p>
+                    </form>
+                  </div>
+              </div>
+            </nav>
+
+            <nav class="navbar navbar-default" id="subnav">
+              <div class="container-fluid">
+                <!-- <div class="navbar-header">
+                  <a class="navbar-brand" href="#">WebSiteName</a>
+                </div> -->
+                <ul class="nav navbar-nav">
+                  <li><a href="aluminpro.html">Home</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="events.html" >Events</a></li>
+				  <li><a href="registration.html" >Registration</a></li>				  
+				  <li><a href="aboutus.html">Aboutus</a></li>
+                </ul>
+             </div> 
+            </nav>
+
+              <!-- <div id="nav">
+                  <ul>
+                      <li> <a href="en/home.html"> Home </a></li>
+                      <li> <a href="en/home.html"> Events </a></li>
+                      <li> <a href="en/home.html"> Gallery </a></li>
+                      <li> <a href="en/home.html"> About Us </a></li>
+                      <li> <a href="en/home.html"> Contact Us </a></li>
+                  </ul>
+              </div> -->
+
+  <div class="container" id="carouselstyle">
+    <!-- <br> -->
+    <div id="myCarousel slide" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="../images/ema_whd_2016.jpg" alt="Chania">
+        </div>
+
+        <div class="item">
+          <img src="../images/startseite_jenni.JPG" alt="Chania">
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+ 
+			<div class="col-md-12">
+	<div class=" marTop10 panel panel-primary">
+		<div class="panel-heading minHeight50">
+			<div class="col-md-4">
+				Images 
+			</div>
+			<div class="col-md-2">
+				Name
+			</div>
+			<div class="col-md-2">
+				Contact
+			</div>
+			<div class="col-md-2">
+				Email
+			</div>
+		</div>
+		<div class="panel-body">
+			<div class="panel panel-sky">
+				<div class="panel-heading panelHead-sky" data-toggle="collapse" data-target="#user_1">
+					<div class="col-md-4">
+						<img src="../images/bird1.png" class="imageSpace col-md-6"/>
+						<img src="../images/bird.jpg" class="imageSpace col-md-6"/>
+					</div>
+					
+					<div class="col-md-2">
+						User One
+					</div>
+					<div class="col-md-2">
+						9979889798
+					</div>
+					<div class="col-md-2">
+						userone@gmail.com
+					</div>
+				</div>
+				<div class="panel-body collapse" id="user_1">
+					<div class="userDetailSpace col-md-12">
+						<div class="panel panel-primary">
+							<div class="panel-heading">User Details</div>
+							<div class="panel-body">
+								<img class="col-md-4" src="../images/bird1.png"/>
+								<img class="col-md-4" src="../images/bird.jpg"/>
+								<div class="col-md-4">
+									<table>
+										<tr>
+											<td>Name</td>
+											<td> : </td>
+											<td>User One</td>
+										</tr>
+										<tr>
+											<td>Contact  </td>
+											<td> : </td>
+											<td>9979889798</td>
+										</tr>
+										<tr>
+											<td>Email  </td>
+											<td> : </td>
+											<td>userone@gmail.com</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+							
+					</div>
+					<div class="clear-fix"></div>
+					<div class="spouseDetailSpace col-md-12">
+						<div class="panel panel-info">
+							<div class="panel-heading">Spouse Details</div>
+							<div class="panel-body">
+								<img class="col-md-4" src="../images/bird.jpg"/>
+								<div class="col-md-8">
+									<div class="col-md-12"> Name : Mrs. User One</div>
+									<div class="clear-fix"></div>
+									<div class="col-md-12">
+										<div class="panel panel-warning">
+											<div class="panel-heading">Details</div>
+											<div>
+													<div> Test Description</div>
+													
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clear-fix"></div>
+					<div class="childrenDetailSpace col-md-12">
+						<div class="panel panel-success">
+							<div class="panel-heading">Children Details</div>
+							<div class="panel-body">
+								<img class="col-md-4" src="../images/bird.jpg"/>
+								<div class="col-md-8">
+									<div class="col-md-6"> Name : Child One</div>
+									<div class="col-md-6"> Studies : First Standard</div>
+									<div class="clear-fix"></div>
+									<div class="col-md-12">
+										<div class="panel panel-warning">
+											<div class="panel-heading">Details</div>
+											<div> Test Description</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clear-fix"></div>
+							<div class="familygallerySpace col-md-12">
+						<div class="panel panel-success">
+							<div class="panel-heading">Family gallery</div>
+							<div class="panel-body">
+									<div class="container" id="carouselstyle">
+    <!-- <br> -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" >
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="../images/1.jpg" alt="Chania">
+        </div>
+
+        <div class="item">
+          <img src="../images/students.jpg" alt="Chania">
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+								
+								
+								
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<div class="clear-fix"></div>
+			<div class="panel panel-sky">
+				<div class="panel-heading panelHead-sky" data-toggle="collapse" data-target="#user_2">
+					<div class="col-md-4">
+						<img src="../images/bird1.png" class="imageSpace col-md-6"/>
+						<img src="../images/bird.jpg" class="imageSpace col-md-6"/>
+					</div>
+					
+					<div class="col-md-2">
+						User Two
+					</div>
+					<div class="col-md-2">
+						9899979695
+					</div>
+					<div class="col-md-2">
+						usertwo@gmail.com
+					</div>
+				</div>
+				<div class="panel-body collapse" id="user_2">
+					<div class="userDetailSpace col-md-12">
+						<div class="panel panel-primary">
+							<div class="panel-heading">User Details</div>
+							<div class="panel-body">
+								<img class="col-md-4" src="../images/bird1.png"/>
+								<img class="col-md-4" src="../images/bird.jpg"/>
+								<div class="col-md-4">
+									<table>
+										<tr>
+											<td>Name</td>
+											<td> : </td>
+											<td>User three</td>
+										</tr>
+										<tr>
+											<td>Contact  </td>
+											<td> : </td>
+											<td>9979889798</td>
+										</tr>
+										<tr>
+											<td>Email  </td>
+											<td> : </td>
+											<td>userone@gmail.com</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+							
+					</div>
+					<div class="clear-fix"></div>
+					<div class="spouseDetailSpace col-md-12">
+						<div class="panel panel-info">
+							<div class="panel-heading">Spouse Details</div>
+							<div class="panel-body">
+								<img class="col-md-4" src="../images/bird.jpg"/>
+								<div class="col-md-8">
+									<div class="col-md-12"> Name : Mrs. User One</div>
+									<div class="clear-fix"></div>
+									<div class="col-md-12">
+										<div class="panel panel-warning">
+											<div class="panel-heading">Details</div>
+											<div> Test Description</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clear-fix"></div>
+					<div class="childrenDetailSpace col-md-12">
+						<div class="panel panel-success">
+							<div class="panel-heading">Children Details</div>
+							<div class="panel-body">
+								<img class="col-md-4" src="../images/bird.jpg"/>
+								<div class="col-md-8">
+									<div class="col-md-6"> Name : Child One</div>
+									<div class="col-md-6"> Studies : First Standard</div>
+									<div class="clear-fix"></div>
+									<div class="col-md-12">
+										<div class="panel panel-warning">
+											<div class="panel-heading">Details</div>
+											<div> Test Description</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clear-fix"></div>
+					
+					<div class="familygallerySpace col-md-12">
+						<div class="panel panel-success">
+							<div class="panel-heading">Family gallery</div>
+							<div class="panel-body">
+									<div class="container" id="carouselstyle">
+    <!-- <br> -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="../images/three.jpg" alt="Chania">
+        </div>
+
+        <div class="item">
+          <img src="../images/alum1.jpg" alt="Chania">
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+								
+								
+								
+							</div>
+						</div>
+					</div>
+					<div class="clear-fix"></div>
+						<!--family images start-->
+						
+	
+						
+						
+						<!--family images end-->
+					
+				</div>
+			</div>
+			
+			<!-- grid div ends-->
+			<div class="panel panel-sky">
+				<div class="panel-heading panelHead-sky" data-toggle="collapse" data-target="#user_3">
+					<div class="col-md-4">
+						<img src="../images/bird1.png" class="imageSpace col-md-6"/>
+						<img src="../images/bird.jpg" class="imageSpace col-md-6"/>
+					</div>
+					
+					<div class="col-md-2">
+						User Three
+					</div>
+					<div class="col-md-2">
+						9979889798
+					</div>
+					<div class="col-md-2">
+						userone@gmail.com
+					</div>
+				</div>
+				<div class="panel-body collapse" id="user_3">
+					<div class="userDetailSpace col-md-12">
+						<div class="panel panel-primary">
+							<div class="panel-heading">User Details</div>
+							<div class="panel-body">
+								<img class="col-md-4" src="../images/bird1.png"/>
+								<img class="col-md-4" src="../images/bird.jpg"/>
+								<div class="col-md-4">
+									<table>
+										<tr>
+											<td>Name</td>
+											<td> : </td>
+											<td>User Three</td>
+										</tr>
+										<tr>
+											<td>Contact  </td>
+											<td> : </td>
+											<td>9979889798</td>
+										</tr>
+										<tr>
+											<td>Email  </td>
+											<td> : </td>
+											<td>userone@gmail.com</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+							
+					</div>
+					<div class="clear-fix"></div>
+					<div class="spouseDetailSpace col-md-12">
+						<div class="panel panel-info">
+							<div class="panel-heading">Spouse Details</div>
+							<div class="panel-body">
+								<img class="col-md-4" src="../images/bird.jpg"/>
+								<div class="col-md-8">
+									<div class="col-md-12"> Name : Mrs. User One</div>
+									<div class="clear-fix"></div>
+									<div class="col-md-12">
+										<div class="panel panel-warning">
+											<div class="panel-heading">Details</div>
+											<div> Test Description</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clear-fix"></div>
+					<div class="childrenDetailSpace col-md-12">
+						<div class="panel panel-success">
+							<div class="panel-heading">Children Details</div>
+							<div class="panel-body">
+								<img class="col-md-4" src="../images/bird.jpg"/>
+								<div class="col-md-8">
+									<div class="col-md-6"> Name : Child One</div>
+									<div class="col-md-6"> Studies : First Standard</div>
+									<div class="clear-fix"></div>
+									<div class="col-md-12">
+										<div class="panel panel-warning">
+											<div class="panel-heading">Details</div>
+											<div> Test Description</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clear-fix"></div>
+							<div class="familygallerySpace col-md-12">
+						<div class="panel panel-success">
+							<div class="panel-heading">Family gallery</div>
+							<div class="panel-body">
+									<div class="container" id="carouselstyle">
+    <!-- <br> -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox" id= "slide">
+        <div class="item active">
+          <img src="../images/2.jpg" alt="Chania">
+        </div>
+
+        <div class="item">
+          <img src="../images/6.jpg" alt="Chania">
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+								
+								
+								
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<div class="clear-fix"></div>
+			<div class="panel panel-sky">
+				<div class="panel-heading panelHead-sky" data-toggle="collapse" data-target="#user_4">
+					<div class="col-md-4">
+						<img src="../images/bird1.png" class="imageSpace col-md-6"/>
+						<img src="../images/bird.jpg" class="imageSpace col-md-6"/>
+					</div>
+					
+					<div class="col-md-2">
+						User Four
+					</div>
+					<div class="col-md-2">
+						9899979695
+					</div>
+					<div class="col-md-2">
+						usertwo@gmail.com
+					</div>
+				</div>
+				<div class="panel-body collapse" id="user_4">
+					<div class="userDetailSpace col-md-12">
+						<div class="panel panel-primary">
+							<div class="panel-heading">User Details</div>
+							<div class="panel-body">
+								<img class="col-md-4" src="../images/bird1.png"/>
+								<img class="col-md-4" src="../images/bird.jpg"/>
+								<div class="col-md-4">
+									<table>
+										<tr>
+											<td>Name</td>
+											<td> : </td>
+											<td>User Four</td>
+										</tr>
+										<tr>
+											<td>Contact  </td>
+											<td> : </td>
+											<td>9979889798</td>
+										</tr>
+										<tr>
+											<td>Email  </td>
+											<td> : </td>
+											<td>userone@gmail.com</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+							
+					</div>
+					<div class="clear-fix"></div>
+					<div class="spouseDetailSpace col-md-12">
+						<div class="panel panel-info">
+							<div class="panel-heading">Spouse Details</div>
+							<div class="panel-body">
+								<img class="col-md-4" src="../images/bird.jpg"/>
+								<div class="col-md-8">
+									<div class="col-md-12"> Name : Mrs. User One</div>
+									<div class="clear-fix"></div>
+									<div class="col-md-12">
+										<div class="panel panel-warning">
+											<div class="panel-heading">Details</div>
+											<div> Test Description</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clear-fix"></div>
+					<div class="childrenDetailSpace col-md-12">
+						<div class="panel panel-success">
+							<div class="panel-heading">Children Details</div>
+							<div class="panel-body">
+								<img class="col-md-4" src="../images/bird.jpg"/>
+								<div class="col-md-8">
+									<div class="col-md-6"> Name : Child One</div>
+									<div class="col-md-6"> Studies : First Standard</div>
+									<div class="clear-fix"></div>
+									<div class="col-md-12">
+										<div class="panel panel-warning">
+											<div class="panel-heading">Details</div>
+											<div> Test Description</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clear-fix"></div>
+					
+					<div class="familygallerySpace col-md-12">
+						<div class="panel panel-success">
+							<div class="panel-heading">Family gallery</div>
+							<div class="panel-body">
+	<div class="container" id="carouselstyle">
+    <!-- <br> -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="../images/three.jpg" alt="Chania">
+        </div>
+
+        <div class="item">
+          <img src="../images/alum1.jpg" alt="Chania">
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+								
+								
+								
+							</div>
+						</div>
+					</div>
+					<div class="clear-fix"></div>
+						<!--family images start-->
+						
+	
+						
+						
+						<!--family images end-->
+					
+				</div>
+			</div>
+			
+			
+			
+			
+			
+			
+		</div>
+	</div>
+</div>						
+						<!-- footer starts-->
+		<div class="container" id="footer" >
+			<div class="footer_nav"> 							
+				 <a href="#">  Contactus</a> &nbsp;|&nbsp;
+				<a href="#"> Terms and conditions </a>	&nbsp;|&nbsp;
+<a href="#"> site map </a>	|				
+		</div>
+			<div class="footer_navbar">				
+				please visit  <a href="#">www.alumin.com</a> 
+			</div>
+		</div>		
+						<!--footer ends-->
+    </body>
+</html>

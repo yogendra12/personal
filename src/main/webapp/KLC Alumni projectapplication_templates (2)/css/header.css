@@ -1,0 +1,98 @@
+body,html{
+    height:100%;
+}
+
+
+body{
+    background-color:#004D85;
+	font-family:helmet;
+}
+
+#header {
+    width: 80%;
+    height: 20%;
+    margin: auto;
+    background-color: white;
+	border-radius: 0 !important;
+    border: none;
+}
+
+.zero-padding {
+    padding: 0 !important;
+}
+
+#textdiv{
+margin-top: 15px;
+}
+#textid {
+	font-size: 60px;
+	font-family: initial;
+    color: #911b18;  
+}
+
+#clickHerebtn {
+    margin-right: 2px;
+    float: right;
+}
+
+#loginformid {
+	display:none;
+	background-color: lightgray;
+     height: 91px;
+    float: right;
+    width: 50%;
+    margin-top: -13px;
+    margin-right: 4px;
+    position: relative;
+	padding-left: 14px;
+    padding-right: 0;
+}
+#forgotpwdid{
+	display:none;
+	background-color: lightgray;
+    height: 91px;
+    float: right;
+    width: 50%;
+    margin-top: -13px;
+    margin-right: 4px;
+    position: relative;
+	padding-left: 14px;
+    padding-right: 0;
+	
+	
+	
+}
+#loginFormClosebuttondiv{
+	
+	padding-top: 3px;
+}
+
+/*login header close */
+#subnavbar {
+    width: 80%;
+    margin: auto;
+    background-color: #4F4E57;
+    border: none;
+    min-height: 30px;
+}
+#subnavbar ul {
+    padding: 0px;
+}
+#subnavbar ul li a {
+    color: #FFF;
+    padding-right: 60px;
+    font-size: 18px;
+    padding-bottom: 4px;
+    padding-top: 5px;
+}
+
+/*login home header close */
+
+
+
+
+
+
+
+
+  

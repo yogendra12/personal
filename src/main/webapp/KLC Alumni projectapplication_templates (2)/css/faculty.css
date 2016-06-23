@@ -1,0 +1,375 @@
+body,html{
+    height:100%;
+}
+
+
+body{
+    background-color:#004D85;
+	font-family:helmet;
+}
+
+#header {
+    width: 80%;
+    height: 18%;
+    margin: auto;
+    background-color: white;
+    border: none;
+}
+
+.zero-padding {
+    padding: 0 !important;
+}
+#textid {
+    color: #911b18;
+   
+}
+
+#clickHerebtn {
+    margin-right: 2px;
+    float: right;
+}
+
+#loginformid {
+    background-color: lightgray;
+    /* height: 70px; */
+    float: right;
+    width: 50%;
+    margin-top: -5px;
+    margin-right: 4px;
+    position: relative;
+    padding-left: 14px;
+    padding-right: 0;
+}
+#subnavbar {
+    width: 80%;
+    margin: auto;
+    background-color: #4F4E57;
+    border: none;
+    min-height: 30px;
+}
+#subnavbar ul {
+    padding: 0px;
+}
+#subnavbar ul li a {
+    color: #FFF;
+    padding-right: 60px;
+    font-size: 18px;
+    padding-bottom: 4px;
+    padding-top: 5px;
+}
+
+#carosel{
+    width:80%;
+    margin:auto;
+	padding: 0px;
+}
+
+.form-control {
+    padding-right: 30px;
+}
+
+.form-control + .glyphicon {
+    position: absolute;
+    right: 0;
+    padding: 8px 27px;
+}
+
+
+
+
+
+
+#carouselstyle{
+    width:82%;
+    margin:auto;
+	
+}
+
+
+
+#gridmodule{
+  width:80%;
+  margin:auto;
+  border:1px solid black;
+}
+
+/* grid module div */
+
+.marTop10{
+	/*margin-top:10px;*/
+	width:82%;
+  margin:auto;
+  padding-top:10px;
+}
+.panel{
+	
+	margin-bottom:10px !important;
+	
+	
+}
+.minHeight50{
+	min-height:50px;
+}
+.panel-sky{
+	border: 0.5px solid orange;
+	border-color:orange;
+}
+.panelHead-sky{
+	background-color:#d9edf7;
+	border: 1px #004D85;
+	min-height:75px;
+	cursor:pointer;
+}
+
+.imageSpace{
+	height: 65px;
+	width : 65px;
+	border: 1px solid dodgerblue;
+	border-radius:10px;
+	margin-right : 5px;
+	margin-top:-5px;
+	padding:0px;
+}
+.userDetailSpace,.spouseDetailSpace,.childrenDetailSpace,{
+	margin:0px;
+	padding:0px;
+}
+
+.familygallerySpace{
+	
+	margin:0px;
+	padding:12px;
+
+}
+#familyid{
+	
+	
+}
+#myCarousel{
+	
+	width:100%;
+}
+
+.carouselSpace{
+	
+}
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+  
+  /*events*/
+  
+ 
+
+#row{
+	
+	padding:opx;
+}
+
+
+
+
+
+.container span.events-list-date{
+	
+	color:#999;
+	margin:0px;
+	padding:0px;
+	
+}
+.container h4  a{
+	color:#004A81;
+	
+}
+.container p{
+	
+	font-size:14px;
+	margin:0px;
+	padding:0px;
+}
+ 
+
+
+#footer .footer_nav a{
+
+	padding:5px;
+	color:#fff;
+	
+}
+
+
+
+
+#userone{
+	
+	padding-top:20px;
+}
+
+.col-md-3{
+	
+	width:19%;
+	
+}
+
+	
+	
+#loginformid{	
+	
+	background-color: lightgray;
+    height: 91px;
+    float: right;
+    width: 50%;
+    margin-top: -13px;
+    margin-right: 4px;
+    position: relative;
+	padding-left: 14px;
+    padding-right: 0;
+}
+
+#forgotpwdid{
+	background-color: lightgray;
+    height: 91px;
+    float: right;
+    width: 50%;
+    margin-top: -13px;
+    margin-right: 4px;
+    position: relative;
+	padding-left: 14px;
+    padding-right: 0;
+	
+	
+	
+}
+#signin{
+	
+	padding-right:15px;
+	padding-top: 10px;
+}
+
+
+
+#clickHerebtn{
+		margin-right: 2px;
+	    float: right;
+	
+}
+
+.carousel-control.left, .carousel-control.right {
+	background-image:none;
+}
+ 
+ .font-style-heading1{
+	 
+	 font-size:20px;
+	 color:#004A81;
+	 text-align:center;
+	 font-weight: bold;
+ }
+ .font-style-heading2{
+	 
+	 color:#FF9900;
+	 font-size:18px;
+	 text-align:center;
+	 margin-top:-10px;
+	 font-weight: bold;
+ }
+ .font-style-heading3{
+	 
+	 color:#4f4e57;
+	 text-align:center;
+	 margin-top:-4px;
+	 font-weight: bold;
+ }
+ .font-style-heading4{
+	 
+font-size:20px;
+	 color:#004A81;
+	 text-align:center;
+	  margin-top:-9px;
+	  font-weight: bold;
+ }
+ 
+ #textid{
+	 color:#911b18;
+	 font-size:20px;
+	 
+ }
+#userdetails-id{
+	
+	min-height:190px;
+	padding-left:16px;
+	
+}
+#userdescription{
+	
+	padding-top:25px;
+}
+#footer-name{
+	
+	font-size:20px;
+}
+#footer .footer_nav p{
+	float:right;
+	padding-left:530px;
+}
+.zero-padding{
+	padding : 0 !important;
+}
+#footerContent a{
+	color: white;
+}
+
+  
+
+.year{
+	
+	width:7%;
+	background-color:orange;
+	color:#fff;
+	font-size:18px;
+}
+.subject{
+	
+	width:10%;
+	background-color:orange;
+	color:#fff;
+	font-size:18px;
+}
+.faculty{
+	width:14%;
+	background-color:orange;
+	color:#fff;
+	font-size:18px;
+	
+}
+.contact{
+	width:11%;
+	background-color:orange;
+	color:#fff;
+	font-size:18px;
+	
+}
+.email{
+	width:20%;
+	background-color:orange;
+	color:#fff;
+	font-size:18px;
+	
+}
+.photo{
+	width:11%;
+	background-color:orange;
+	color:#fff;
+	font-size:18px;
+	
+}
+.about{
+	width:19%;
+	background-color:orange;
+	color:#fff;
+	font-size:18px;
+	
+	
+}
