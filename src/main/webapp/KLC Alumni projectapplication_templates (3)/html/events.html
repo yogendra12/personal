@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> SOME APPS</title>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylsheet" href="../css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/events.css">
+		<link rel="stylesheet" href="../css/header.css">
+		<link rel="stylesheet" href="../css/footer.css">
+		<link rel="stylesheet" href="../css/commonStyles.css">
+
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+		<script>
+	$(document).ready(function(){
+    $("#clickHerebtn").click(function(){
+		$("#clickHerebtn").hide();
+        $("#loginformid").fadeIn("slow");
+    });
+	$("#loginBtn, #loginFormCloseBtn").click(function(){
+		$("#loginformid").fadeOut("slow");      
+		$("#clickHerebtn").show();		
+    });
+});
+</script>	
+        
+    </head>
+	<body>   		
+			  
+			  <nav class="navbar navbar-default" id="header">
+                <div class="container col-xs-12 zero-padding">
+                  <div class="header">
+                      <a class="navbar-brand" href="#" id="logoid"><img src="../images/KlceLogo6.png" class="img-responsive" alt="logo logo logo logo" /></a>  
+				 </div>
+				  <div class="zero-padding pull-left" id="textdiv">
+					<span id="textid">KLCE 87 ECE</span>
+				  </div>             
+				
+					<a href="#" id="clickHerebtn">click here to login</a><br><br>					
+					
+					<div class="col-sm-8" id="loginformid">
+					<div class="pull-left" id="loginFormClosebuttondiv"> 
+						<a href="#" class="close pull-left" id="loginFormCloseBtn" data-dismiss="modal"><img src="../images/windowclose.png" width="18px" alt="Logo name"/></a>
+					</div>
+					<form id="signin" class="navbar-form navbar-right zero-padding" role="form">
+					
+						<div class="col-xs-12 zero-padding" id="logindivid">
+							<div class="col-xs-5 input-group pull-left" id="username">
+								<span class="input-group-addon"id="username-glyphiconwidth"><i class="glyphicon glyphicon-user"></i></span>
+								<input id="user name" type="text" class="form-control" name="user name" value="" placeholder="user name">                                        
+							</div>
+							<div class="col-xs-5 input-group pull-left" id="password">
+								<span class="input-group-addon" id="password-glyphiconwidth"><i class="glyphicon glyphicon-lock"></i></span>
+								<input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">                                        
+							</div>
+							<div  class="col-xs-2 zero-padding" id="loginbuttonid">
+								<button type="submit" class="btn btn-primary" id="loginBtn">Login</button>   
+							</div>
+							<div  class="col-xs-3 zero-padding"id="forgotpwddiv">
+								<a href="#" id="forgotpwd">forgot password</a>  
+							</div>
+							   
+						</div>
+					
+                                        
+                   </form>  
+					
+					</div>
+			
+     
+								<!-- forgot pwd -->
+			
+					<div class="col-sm-8" id="forgotpwdid">
+					<div class="pull-left" id="forgotpwdformCloseBtndiv"> 
+						<a href="#" class="close pull-left" id="forgotFormCloseBtn" data-dismiss="modal"><img src="../images/windowclose.png" width="18px" alt="Logo name"/></a>
+					</div>
+					<form id="signin" class="navbar-form navbar-right zero-padding" role="form">
+					
+						<div class="col-xs-12 zero-padding" id="forgot-div">
+							<div class="col-xs-5 input-group pull-left" id="username">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+								<input id="user name" type="text" class="form-control" name="user name" value="" placeholder="user name">                                        
+							</div>
+							<div class="col-xs-5" id="passwordforgotid">
+								<span>please, Enter your email to get password</span>
+								                                       
+							</div>
+							
+							<div  class="col-xs-2 zero-padding" id="submit-div">
+								<button type="submit" class="btn btn-primary" id="submitBtn">Submit</button>   
+							</div>
+						<!--	<div  class="col-xs-3 zero-padding">
+								<a href="#" id="forgotpwd">forgot password</a>  
+							</div> -->
+							
+							   
+						</div>
+					
+                                        
+                   </form>  
+					
+					</div>
+				  
+				  <!-- forgot pwd -->	  
+				  
+              </div>
+            </nav>
+
+		     
+		   <!-- header -->
+
+            <nav class="navbar navbar-default" id="subnavbar" style="border-radius: 0 !important;">
+             
+                <!-- <div class="navbar-header">
+                  <a class="navbar-brand" href="#">WebSiteName</a>
+                </div> -->
+                <ul class="nav navbar-nav">
+                  <li><a href="aluminpro.html">Home</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="events.html" >Events</a></li>
+				  <li><a href="registration.html" >Registration</a></li>	
+				  <li><a href="facultypage.html">Faculty</a></li>				  
+				  <li><a href="aboutus.html">Aboutus</a></li>
+                </ul>
+            
+            </nav>
+			  
+
+				
+            
+<!--events starts-->
+			<div class="col-md-12 zeropaddingxs">
+			 <div class=" marTop10 panel panel-primary" id="padding-top-xs" style="border-radius: 0;margin-bottom: 0 !important;">
+			 <div class="panel-heading minHeight50" style="font-size:20px;align:center;text-align: center;background-color:#b733ad;border-color:#b733ad">
+			Events
+		</div>
+			 <div class="panel-body">	
+              			
+		<div class="panel panel-voilet">  
+								
+				<div class="panel panel-body" style="padding: 0px;">
+				
+						<div class="col-md-12" style="padding: 5px;">
+						  <div class="col-md-3">
+							<img class="img-responsive" src="../images/neww.jpg"/>
+					 				 
+							</div>	
+
+						
+							<div class="col-md-9"> 
+								<span class="events-list-date">14.06.2016</span>
+								<h4><a href="#" title="Insert event title here"> Insert event title here </a>
+								</h4>
+								<p>EMA organizes various events/projects/conferences in different countries ranging from those focused on developing additional soft skills of our membership to those focused on raising awareness of various issues affecting our societies. Two examples of conferences organized through EMA are Geomundus and Humanities. </p>
+							
+							</div>
+							
+				</div>
+				<div class="col-md-12" style="padding: 5px;">
+						  <div class="col-md-3">
+							<img class="img-responsive" src="../images/three.jpg"/>
+					 				 
+							</div>	
+
+						
+							<div class="col-md-9"> 
+								<span class="events-list-date">14.06.2016</span>
+								<h4><a href="#" title="Insert event title here"> Insert event title here </a>
+								</h4>
+								<p>EMA organizes various events/projects/conferences in different countries ranging from those focused on developing additional soft skills of our membership to those focused on raising awareness of various issues affecting our societies. Two examples of conferences organized through EMA are Geomundus and Humanities. </p>
+							
+							</div>
+							
+				</div>
+				<div class="col-md-12" style="padding: 5px;">
+						  <div class="col-md-3">
+							<img class="img-responsive" src="../images/neww.jpg"/>
+					 				 
+							</div>	
+
+						
+							<div class="col-md-9"> 
+								<span class="events-list-date">14.06.2016</span>
+								<h4><a href="#" title="Insert event title here"> Insert event title here </a>
+								</h4>
+								<p>EMA organizes various events/projects/conferences in different countries ranging from those focused on developing additional soft skills of our membership to those focused on raising awareness of various issues affecting our societies. Two examples of conferences organized through EMA are Geomundus and Humanities. </p>
+							
+							</div>
+							
+				</div>
+				<div class="col-md-12" style="padding: 5px;">
+						  <div class="col-md-3">
+							<img class="img-responsive" src="../images/neww.jpg"/>
+					 				 
+							</div>	
+
+						
+							<div class="col-md-9"> 
+								<span class="events-list-date">14.06.2016</span>
+								<h4><a href="#" title="Insert event title here"> Insert event title here </a>
+								</h4>
+								<p>EMA organizes various events/projects/conferences in different countries ranging from those focused on developing additional soft skills of our membership to those focused on raising awareness of various issues affecting our societies. Two examples of conferences organized through EMA are Geomundus and Humanities. </p>
+							
+							</div>
+							
+				</div>
+				<div class="col-md-12" style="padding: 5px;">
+						  <div class="col-md-3">
+							<img class="img-responsive" src="../images/neww.jpg"/>
+					 				 
+							</div>	
+
+						
+							<div class="col-md-9"> 
+								<span class="events-list-date">14.06.2016</span>
+								<h4><a href="#" title="Insert event title here"> Insert event title here </a>
+								</h4>
+								<p>EMA organizes various events/projects/conferences in different countries ranging from those focused on developing additional soft skills of our membership to those focused on raising awareness of various issues affecting our societies. Two examples of conferences organized through EMA are Geomundus and Humanities. </p>
+							
+							</div>
+							
+				</div>
+				
+					
+				</div>
+			
+	
+          
+    
+</div>
+              
+
+
+
+		
+				
+   
+   
+   </div>
+				
+					
+						
+			
+				
+		</div>
+		</div>
+		
+					
+						
+<!--events images end-->
+
+		<div class="col-xs-12 zero-padding" >
+		<div id="footerid">
+			<div class="col-xs-12" id="footerdiv">
+				<div class="col-xs-6 zero-padding col-xs-12" id="footerContent"> 							
+						<a href="aluminpro.html">Home </a>&nbsp;|&nbsp;
+						<a href="gallery.html">Gallery</a>&nbsp;|&nbsp;
+						<a href="events.html">Events</a>&nbsp;|&nbsp;
+						<a href="registration.html">Regisrtation</a>&nbsp;|&nbsp;
+						<a href="facultypage.html">Faculty</a>&nbsp;|&nbsp;
+						<a href="aboutus.html">AboutUs</a>
+																	
+				</div>
+				<div  class="col-xs-6 zero-padding" id="footer-rightcontent" > 							
+						<p class="pull-right">Developed by:DovaSoft Technologies</p> 	
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+    </body>
+</html>
+<script>
+	$(document).ready(function(){
+    $("#clickHerebtn").click(function(){
+		$("#clickHerebtn").hide();
+        $("#loginformid").fadeIn("slow");
+    });
+	$("#loginBtn, #loginFormCloseBtn").click(function(){
+		$("#loginformid").fadeOut("slow");      
+		$("#clickHerebtn").show();		
+    });
+	$("#forgotpwd").click(function(){
+		$("#loginformid").hide();
+        $("#forgotpwdid").fadeIn("slow");
+		
+    });
+	$("#submitBtn, #forgotFormCloseBtn").click(function(){
+		$("#forgotpwdid").fadeOut("slow");      
+		$("#clickHerebtn").show();		
+    });
+
+});
+</script>	
