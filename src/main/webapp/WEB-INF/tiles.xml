@@ -17,6 +17,23 @@
 	<definition name="alumini" extends="base.definition">
 		<put-attribute name="body" value="/WEB-INF/pages/aluminpro.jsp" />
 	</definition>
+	<definition name="reg" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/registration.jsp" />
+	</definition>
+	<definition name="faculty" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/faculty.jsp" />
+	</definition>
+	<definition name="about" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/aboutus.jsp" />
+	</definition>
+	
+	<definition name="gallery" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/gallery.jsp" />
+	</definition>
+	<definition name="event" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/events.jsp" />
+	</definition>
+	
 	<!-- <definition name="partnerLoginHome" extends="base.definition">
 		<put-attribute name="body" value="/WEB-INF/pages/partnerLogin.jsp" />
 	</definition> -->
