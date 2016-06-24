@@ -7,15 +7,15 @@
 <tiles-definitions>
 	<definition name="base.definition" template="/WEB-INF/Home/home.jsp">
 		<put-attribute name="title" value="" />
-		<put-attribute name="header" value="/WEB-INF/Home/header1.jsp" />
+		<put-attribute name="header" value="/WEB-INF/Home/header.jsp" />
 		<!-- <put-attribute name="menu" value="/WEB-INF/Home/menu.jsp" /> -->
 		<put-attribute name="body" value="" />
-		<put-attribute name="footer" value="/WEB-INF/Home/footer1.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/Home/footer.jsp" />
 	</definition>
 
 	<!-- Login -->
-	<definition name="loginHome" extends="base.definition">
-		<put-attribute name="body" value="/WEB-INF/pages/login.jsp" />
+	<definition name="alumini" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/aluminpro.jsp" />
 	</definition>
 	<!-- <definition name="partnerLoginHome" extends="base.definition">
 		<put-attribute name="body" value="/WEB-INF/pages/partnerLogin.jsp" />

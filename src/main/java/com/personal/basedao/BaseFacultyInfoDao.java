@@ -1,17 +1,10 @@
 package com.personal.basedao;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.PreparedStatementCreator;
 import org.springframework.jdbc.core.simple.ParameterizedBeanPropertyRowMapper;
-import org.springframework.jdbc.support.GeneratedKeyHolder;
-import org.springframework.jdbc.support.KeyHolder;
-import org.springframework.transaction.annotation.Transactional;
 
 import com.personal.model.FacultyInfo;
 
@@ -20,59 +13,100 @@ public class BaseFacultyInfoDao {
 	@Autowired
 	public JdbcTemplate jdbcTemplate;
 
-	public final String INSERT_SQL = "INSERT INTO faculty( year, subject, facultyName, facultyInfo, role, updatedBy, updatedOn) values (?, ?, ?, ?, ?, ?, ?)";
+	public final String INSERT_SQL = "INSERT INTO faculty_Info( facultyId, year, subject, facultyName, facultyPhotoPath, aboutFaculty, contact, email, updatedBy) values (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
-	/* this should be conditional based on whether the id is present or not */
-	@Transactional
-	public void save(final FacultyInfo facultyInfo) {
-		if (facultyInfo.getId() == 0) {
+	public boolean save(FacultyInfo facultyInfo) {
+		boolean isInsert = false;
+		try {
+			int insert = jdbcTemplate
+					.update(INSERT_SQL,
+							new Object[] { facultyInfo.getFacultyId(),
+									facultyInfo.getYear(),
+									facultyInfo.getSubject(),
+									facultyInfo.getFacultyName(),
+									facultyInfo.getFacultyPhotoPath(),
+									facultyInfo.getAboutFaculty(),
+									facultyInfo.getContact(),
+									facultyInfo.getEmail(), });
+			if (insert > 0) {
+				isInsert = true;
+			}
+		} catch (Exception e) {
 
-			KeyHolder keyHolder = new GeneratedKeyHolder();
-			int update = jdbcTemplate.update(new PreparedStatementCreator() {
-				public PreparedStatement createPreparedStatement(
-						Connection connection) throws SQLException {
-
-					PreparedStatement ps = connection.prepareStatement(
-							INSERT_SQL, new String[] { "id" });
-					ps.setString(1, facultyInfo.getFacultyInfo());
-					ps.setString(2, facultyInfo.getFacultyName());
-					ps.setString(3, facultyInfo.getRole());
-					ps.setString(4, facultyInfo.getSubject());
-					ps.setString(5, facultyInfo.getUpdatedBy());
-					ps.setString(6, facultyInfo.getUpdatedOn());
-					ps.setString(6, facultyInfo.getYear());
-					return ps;
-				}
-			}, keyHolder);
-
-			Number unId = keyHolder.getKey();
-			facultyInfo.setId(unId.intValue());
-
-		} else {
-
-			String sql = "UPDATE faculty  set year = ? ,subject = ? ,facultyName = ? ,facultyInfo = ? ,role = ? ,updatedBy = ? ,updatedOn = ?  where id = ? ";
-
-			jdbcTemplate.update(sql, new Object[] { facultyInfo.getFacultyInfo(),
-					facultyInfo.getSubject(), facultyInfo.getFacultyName(),
-					facultyInfo.getUpdatedBy(), facultyInfo.getRole(),
-					facultyInfo.getUpdatedOn(), facultyInfo.getId() });
 		}
+		return isInsert;
 	}
 
-	@Transactional
-	public void delete(int id) {
-		String sql = "DELETE FROM personal_info WHERE id=?";
-		jdbcTemplate.update(sql, new Object[] { id });
+	public boolean updateFacultyInfo(FacultyInfo facultyInfo) {
+		boolean isUpdate = false;
+		try {
+			String sql = "UPDATE faculty_Info  set year = ? ,subject = ? ,facultyName = ? ,facultyPhotoPath = ? ,aboutFaculty = ? ,contact = ? ,email = ? ,updatedBy = ? ,updatedDate = ?  where facultyId = ? ";
+
+			int update = jdbcTemplate.update(
+					sql,
+					new Object[] { facultyInfo.getYear(),
+							facultyInfo.getSubject(),
+							facultyInfo.getFacultyName(),
+							facultyInfo.getFacultyPhotoPath(),
+							facultyInfo.getAboutFaculty(),
+							facultyInfo.getContact(), facultyInfo.getEmail(),
+							facultyInfo.getUpdatedBy(),
+							facultyInfo.getUpdatedDate(),
+							facultyInfo.getFacultyId() });
+			if (update > 0) {
+				isUpdate = true;
+			}
+
+		} catch (Exception e) {
+
+		}
+
+		return isUpdate;
 	}
 
-	public FacultyInfo getById(int id) {
-		String sql = "SELECT * from faculty where id = ? ";
-		List<FacultyInfo> retlist = jdbcTemplate.query(sql,
-				new Object[] { id }, ParameterizedBeanPropertyRowMapper
-						.newInstance(FacultyInfo.class));
-		if (retlist.size() > 0)
-			return retlist.get(0);
+	public boolean deleteFacultyInfo(int id) {
+		boolean isDelete = false;
+		try {
+			String sql = "DELETE FROM faculty_Info WHERE facultyId =?";
+			int delete = jdbcTemplate.update(sql, new Object[] { id });
+			if (delete > 0) {
+				isDelete = true;
+			}
+		} catch (Exception e) {
+
+		}
+		return isDelete;
+
+	}
+
+	public FacultyInfo getFacultyInfo(int id) {
+		try {
+			String sql = "SELECT * from faculty_Info where  facultyId= ? ";
+			List<FacultyInfo> retlist = jdbcTemplate.query(sql,
+					new Object[] { id }, ParameterizedBeanPropertyRowMapper
+							.newInstance(FacultyInfo.class));
+			if (retlist.size() > 0)
+				return retlist.get(0);
+		} catch (Exception e) {
+
+		}
+
 		return null;
+	}
+
+	public List<FacultyInfo> getFacultyInfoAll() {
+		List<FacultyInfo> retlist = null;
+		try {
+			String sql = "SELECT * from faculty_Info";
+			retlist = jdbcTemplate.query(sql,
+					ParameterizedBeanPropertyRowMapper
+							.newInstance(FacultyInfo.class));
+
+		} catch (Exception e) {
+
+		}
+
+		return retlist;
 	}
 
 }

@@ -25,6 +25,12 @@ public class BaseController {
 		return "personal";
 	}
 	
+	@RequestMapping(value = "/aluminiHome")
+	public String getaluminiHomePage( ModelMap model) {
+		System.out.println("alumini page...");
+		return "alumini";
+	}
+	
 	
 	@RequestMapping(value = "/importcsv")
 	public @ResponseBody String importCSVData(@ModelAttribute PersonalInfo personalInfo, ModelMap model, HttpServletRequest request) {

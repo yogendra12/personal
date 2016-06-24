@@ -1,60 +1,99 @@
-<!DOCTYPE html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Aurospaces</title>
-	
-	<!-- core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.css" rel="stylesheet">
-    <link href="css/animate.min.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/main-sub.css" rel="stylesheet">
-    <link href="css/smile-font.css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
-    <![endif]-->   
-    
-	<link rel="shortcut icon" href="images/ico/favicon.ico">
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.steps.js"></script>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/jquery.isotope.min.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/jquery.range.js"></script>
-    <script src="js/jquery.steps.min.js"></script>
-    <script src="js/main.js"></script>
-    
-    <script src="js/respond.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/jquery.easing.min.js" type="text/javascript"></script>
-    <script src="js/jquery-multi-step-form-copy.js" type="text/javascript"></script>
-    <script type="text/javascript" src="js/formValidation.js"></script>
-     <script type="text/javascript" src="js/allServices.js"></script>
-</head>
- <header id="header" class="hidden-xs">
-        <nav class="navbar navbar-inverse" role="banner">
-            <div class="container" style="height: 64px;">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <span class="inline-block"><a class="navbar-brand" href="auroHome.htm"><img src="images/logo.png" alt="logo"></a></span>
-                    <span class="inline-block">
-                     <span class="log-head"> Aurospaces <span font-size:"large;">(Beta)</span></span>
-                     <div class="clearfix"></div>
-                     <span class="log-head-sub" style="margin-left: 55px;top: 71%;"> The Marketplace for all services </span>
-			</span>	
-			</div>
-            </div><!--/.container-->
-        </nav><!--/nav-->
-        
-    </header><!--/header-->
+<nav class="navbar navbar-default" id="header">
+                <div class="container col-xs-12 zero-padding">
+                  <div class="header">
+                      <a class="navbar-brand" href="#" style="padding-top: 8px;padding-left: 20px;"><img src="images/KlceLogo6.png" class="img-responsive" alt="logo logo logo logo" /></a>                  </div>
+				  <div class="zero-padding pull-left" id="textdiv">
+					<span id="textid">KLCE 87 ECE</span>
+				  </div>             
+				
+					<a href="#" id="clickHerebtn">click here to login</a><br><br>					
+					
+					<div class="col-sm-8" id="loginformid">
+					<div class="pull-left" id="loginFormClosebuttondiv"> 
+						<a href="#" class="close pull-left" id="loginFormCloseBtn" data-dismiss="modal"><img src="images/windowclose.png" width="18px" alt="Logo name"/></a>
+					</div>
+					<form id="signin" class="navbar-form navbar-right zero-padding" role="form">
+					
+						<div class="col-xs-12 zero-padding">
+							<div class="col-xs-5 input-group pull-left" id="username">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+								<input id="user name" type="text" class="form-control" name="user name" value="" placeholder="user name">                                        
+							</div>
+							<div class="col-xs-5 input-group pull-left" id="password">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+								<input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">                                        
+							</div>
+							<div  class="col-xs-2 zero-padding">
+								<button type="submit" class="btn btn-primary" id="loginBtn">Login</button>   
+							</div>
+							<div  class="col-xs-3 zero-padding">
+								<a href="#" id="forgotpwd">forgot password</a>  
+							</div>
+							   
+						</div>
+					
+                                        
+                   </form>  
+					
+					</div>
+			
+     
+								<!-- forgot pwd -->
+			
+					<div class="col-sm-8" id="forgotpwdid">
+					<div class="pull-left" style="padding-top: 3px;"> 
+						<a href="#" class="close pull-left" id="forgotFormCloseBtn" data-dismiss="modal"><img src="images/windowclose.png" width="18px" alt="Logo name"/></a>
+					</div>
+					<form id="signin" class="navbar-form navbar-right zero-padding" role="form">
+					
+						<div class="col-xs-12 zero-padding">
+							<div class="col-xs-5 input-group pull-left" id="username">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+								<input id="user name" type="text" class="form-control" name="user name" value="" placeholder="user name">                                        
+							</div>
+							<div class="col-xs-5" id="password" style="font-size:16px;">
+								<span>please, Enter your email to get password</span>
+								                                       
+							</div>
+							
+							<div  class="col-xs-2 zero-padding">
+								<button type="submit" class="btn btn-primary" id="submitBtn">Submit</button>   
+							</div>
+						<!--	<div  class="col-xs-3 zero-padding">
+								<a href="#" id="forgotpwd">forgot password</a>  
+							</div> -->
+							
+							   
+						</div>
+					
+                                        
+                   </form>  
+					
+					</div>
+				  
+				  <!-- forgot pwd -->	  
+				  
+              </div>
+            </nav>
+
+		     
+		   <!-- header -->
+
+            <nav class="navbar navbar-default" id="subnavbar" style="border-radius: 0 !important;">
+             
+                <!-- <div class="navbar-header">
+                  <a class="navbar-brand" href="#">WebSiteName</a>
+                </div> -->
+                <ul class="nav navbar-nav">
+                  <li><a href="aluminpro.html">Home</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="events.html" >Events</a></li>
+				  <li><a href="registration.html" >Registration</a></li>	
+				  <li><a href="facultypage.html">Faculty</a></li>				  
+				  <li><a href="aboutus.html">Aboutus</a></li>
+                </ul>
+            
+            </nav>
+           
+		             
+         <!-- tota header ends here -->     

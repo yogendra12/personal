@@ -1,94 +1,109 @@
-
+/**
+ * 
+ */
 package com.personal.basedao;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.Date;
-import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.PreparedStatementCreator;
 import org.springframework.jdbc.core.simple.ParameterizedBeanPropertyRowMapper;
-import org.springframework.jdbc.support.GeneratedKeyHolder;
-import org.springframework.jdbc.support.KeyHolder;
-import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
 
 import com.personal.model.ChildInfo;
 
+/**
+ * @author koti
+ *
+ */
+public class BaseChildInfoDao {
 
-public class BaseChildInfoDao{
+	@Autowired
+	public JdbcTemplate jdbcTemplate;
 
-@Autowired public JdbcTemplate jdbcTemplate;
+	public final String INSERT_SQL = "INSERT INTO child_Info"
+			+ "( rollNo, childName, aboutChild,  childPhotoPath,updatedBy,updatedDate) values (?, ?, ?, ?, ?, ?)";
 
- 
-	public final String INSERT_SQL = "INSERT INTO child_Info( roll_no, child_first_name, child_last_name, course_studying, child_img_path) values (?, ?, ?, ?, ?)"; 
+	public boolean saveChildrenInfo(ChildInfo childInfo) {
+		int update = 0;
+		boolean isSave = false;
+		try {
+			update = jdbcTemplate.update(INSERT_SQL, new Object[] {
+					childInfo.getRollNo(), childInfo.getChildName(),
+					childInfo.getAboutChild(), childInfo.getUpdatedBy(),
+					childInfo.getUpdatedDate() });
 
-
-
-
-
-	/* this should be conditional based on whether the id is present or not */
-	@Transactional
-	public void save(final ChildInfo childInfo) 
-	{
-	if(childInfo.getId() == 0)	{
-
-	KeyHolder keyHolder = new GeneratedKeyHolder();
-	int update = jdbcTemplate.update(
-			new PreparedStatementCreator() {
-					public PreparedStatement 
-					createPreparedStatement(Connection connection) throws SQLException {
-	
-					PreparedStatement ps =
-									connection.prepareStatement(INSERT_SQL,new String[]{"id"});
-	ps.setString(1, childInfo.getRollNo());
-ps.setString(2, childInfo.getChildFirstName());
-ps.setString(3, childInfo.getChildLastName());
-ps.setString(4, childInfo.getCourseStudying());
-ps.setString(5, childInfo.getChildImgPath());
-
-							return ps;
-						}
-				},
-				keyHolder);
-				
-				Number unId = keyHolder.getKey();
-				childInfo.setId(unId.intValue());
-				
-
+			if (update > 0) {
+				isSave = true;
+			}
+		} catch (Exception e) {
+			return false;
 		}
-		else
-		{
-
-			String sql = "UPDATE child_Info  set roll_no = ? ,child_first_name = ? ,child_last_name = ? ,course_studying = ? ,child_img_path = ?  where id = ? ";
-	
-			jdbcTemplate.update(sql, new Object[]{childInfo.getRollNo(),childInfo.getChildFirstName(),childInfo.getChildLastName(),childInfo.getCourseStudying(),childInfo.getChildImgPath(),childInfo.getId()});
-		}
+		return isSave;
 	}
-		
-		@Transactional
-		public void delete(int id) {
-			String sql = "DELETE FROM child_Info WHERE id=?";
-			jdbcTemplate.update(sql, new Object[]{id});
-		}
-		
 
-	 public ChildInfo getById(int id) {
-			String sql = "SELECT * from child_Info where id = ? ";
+	public boolean updateChildInfo(ChildInfo childInfo) {
+		int update = 0;
+		boolean isUpdate = false;
+		try {
+			String sql = "UPDATE  child_Info  set   childName=?, aboutChild =?,  childPhotoPath =?,updatedBy=?,updatedDate =? where rollNo = ?";
+
+			update = jdbcTemplate.update(
+					sql,
+					new Object[] { childInfo.getChildName(),
+							childInfo.getAboutChild(),
+							childInfo.getUpdatedBy(),
+							childInfo.getUpdatedDate(),
+							childInfo.getRollNo() });
+			if (update == 0) {
+				isUpdate = true;
+			}
+		} catch (Exception e) {
+
+		}
+		return isUpdate;
+
+	}
+
+	public boolean deleteChildrenInfo(int childId) {
+		boolean isDelete = false;
+		try {
+			String sql = "DELETE FROM  child_Info WHERE childId=?";
+			int delete = jdbcTemplate.update(sql, new Object[] { childId });
+			if (delete > 0) {
+				isDelete = true;
+			}
+		} catch (Exception e) {
+
+		}
+		return isDelete;
+	}
+
+	public ChildInfo getChildrenInfo(int childId) {
+		try {
+			String sql = "SELECT * from child_info where childId = ? ";
 			List<ChildInfo> retlist = jdbcTemplate.query(sql,
-			new Object[]{id},
-			ParameterizedBeanPropertyRowMapper.newInstance(ChildInfo.class));
-			if(retlist.size() > 0)
+					new Object[] { childId },
+					ParameterizedBeanPropertyRowMapper
+							.newInstance(ChildInfo.class));
+			if (retlist.size() > 0)
 				return retlist.get(0);
-			return null;
+		} catch (Exception e) {
+
 		}
+		return null;
+	}
 
-	
+	public List<ChildInfo> getChildrenInfoAll() {
+		List<ChildInfo> retlist = null;
+		try {
+			String sql = "SELECT * from child_info  ";
+			retlist = jdbcTemplate.query(sql,
+					ParameterizedBeanPropertyRowMapper
+							.newInstance(ChildInfo.class));
 
+		} catch (Exception e) {
+
+		}
+		return retlist;
+	}
 }
